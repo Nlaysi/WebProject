@@ -33,6 +33,7 @@ h1 {
 }
 
 #btn_refresh {
+    vertical-align: text-bottom;
     width: 20%;
     background-color: #c9d2d7;
     color: #69838a;
