@@ -38,7 +38,7 @@ window.onload = function () {
         if(!cities.has("textBox.value")){
 
         var request = new XMLHttpRequest();
-        var url = "http://api.openweathermap.org/data/2.5/weather?q=" + textBox.value + "&units=metric&appid=a013324cdcd65a54ee5b6c5c40271e96";
+        var url = "https://api.openweathermap.org/data/2.5/weather?q=" + textBox.value + "&units=metric&appid=a013324cdcd65a54ee5b6c5c40271e96";
         request.open('GET', url);
         request.responseType = 'json';
         var value;
@@ -79,7 +79,7 @@ window.onload = function () {
         CloseCities();
         load();
 
-        var url = "http://api.openweathermap.org/data/2.5/weather?q=" + localStorage.getItem("city") + "&units=metric&appid=a013324cdcd65a54ee5b6c5c40271e96";
+        var url = "https://api.openweathermap.org/data/2.5/weather?q=" + localStorage.getItem("city") + "&units=metric&appid=a013324cdcd65a54ee5b6c5c40271e96";
         getMainWeather(url);
         RefreshCities();
     }
