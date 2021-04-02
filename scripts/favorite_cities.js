@@ -40,7 +40,7 @@ function RefreshCities() {
         const city = array[i];
 
     let request = new XMLHttpRequest();
-    let url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=a013324cdcd65a54ee5b6c5c40271e96";
+    let url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=a013324cdcd65a54ee5b6c5c40271e96";
     request.open('GET', url);
     request.responseType = 'json';
     let value;
