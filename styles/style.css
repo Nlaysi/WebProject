@@ -1,5 +1,6 @@
 body {
     max-width: 1280px;
+    min-width: 320px;
     margin: auto;
     color: #69838a;
 }
@@ -93,6 +94,8 @@ img {
     display: inline-block;
     object-fit: contain;
     width: 120px;
+    background: #6f8288;
+    border-radius: 15%;
     margin-top: 15px;
 }
 
@@ -161,6 +164,8 @@ img {
     width: 41%;
     padding: 0 4% 0 4%;
     vertical-align: top;
+    margin-top: 24px;
+    transition: 0.4s;
 }
 
 .fav_city {
@@ -186,17 +191,55 @@ img {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: 0;
+    border: 4px solid transparent;
     background: #6f8288;
     color: #eff9f7;
     font-size: 20px;
     float: right;
+    transition: 0.4s;
+}
+
+.fav_btn:hover {
+    background: #5f6b6e;
+}
+
+.fav_btn:active{
+    background: red;
 }
 
 .fav_img {
     float: left;
     width: 40px;
     margin: 0 0 0 12px;
+    border-radius: 50%;
+}
+
+#mload {
+    opacity: 1;
+    z-index: 10000000;
+    background: white;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 180px;
+}
+
+#btn_refresh:hover {
+    transition: 0.4s;
+    background: #9ea3a5;
+    color: #c9d2d7;
+}
+
+#btnAddCity:hover {
+    transition: 0.4s;
+    background: #5f6b6e;
+}
+
+.fload {
+    height: 180px;
+    width: 100%;
+    background: #f1f1f1;
+    margin-top: 43px;
 }
 
 @media (max-width: 800px) {
@@ -244,5 +287,18 @@ img {
 
     .main_section {
         white-space: nowrap;
+    }
+
+    #favorite section div:first-child {
+        height: 43px;
+    }
+
+    .fload {
+        margin-top: 0;
+    }
+
+    #mload {
+        line-height: 366px;
+        height: 366px;
     }
 }
